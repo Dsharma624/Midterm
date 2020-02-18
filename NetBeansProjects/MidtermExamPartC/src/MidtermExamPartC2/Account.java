@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package MidtermExamPartC1;
+package MidtermExamPartC2;
 
 /**
  *
@@ -15,7 +15,7 @@ public class Account {
     private String userName;//the userID
     private String AccountNum; // account number
     private String AccountType;// the user's account type
-    public static String [] account_options={"Checkings","Savings","Loan"};
+    public static String [] account_options={"Mortgage","CC","Savings"};
 
     /**
      * A constructor that takes in the userName and the Account type
@@ -26,7 +26,7 @@ public class Account {
     public Account(String chosenName,String chosenType) {
         userName = chosenName;
         AccountType = chosenType;
-        AccountNum= "A-"+(int)(2000+Math.random()*9000);
+        AccountNum= "A-"+(int)(3000+Math.random()*9000);
     }
 
     /**
