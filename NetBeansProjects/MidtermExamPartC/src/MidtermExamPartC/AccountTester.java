@@ -12,6 +12,9 @@ import java.util.Scanner;
  * @author 
  */
 public class AccountTester {
+    Scanner scanner = new Scanner (System.in);
+    int i = scanner.nextInt();
+    system.out.print("please enter your user name");
     
     
     /* Add your code here */
