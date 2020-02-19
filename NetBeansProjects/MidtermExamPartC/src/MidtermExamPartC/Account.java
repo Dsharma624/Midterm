@@ -14,7 +14,7 @@ public class Account {
  
     private String userName;//the userID
     private String AccountNum; // account number
-    private String AccountType;// the user's account type
+    private enum AccountType[student];// the user's account type
     public static String [] account_options={"Mortgage","CC","Savings"};
 
     /**
@@ -23,7 +23,7 @@ public class Account {
      * @param chosenName the ID to assign to this user
      * @param chosenType the users account type
      */
-    public Account(String chosenName,String chosenType) {
+    public Account(String chosenName,enum chosenType) {
         userName = chosenName;
         AccountType = chosenType;
         AccountNum= "A-"+(int)(3000+Math.random()*9000);
@@ -62,7 +62,7 @@ public class Account {
     /**
      * @param genre the genre to set
      */
-    public void setAccountType(String type) {
+    public void setAccountType( type) {
         this.AccountType = type;
     }
 
